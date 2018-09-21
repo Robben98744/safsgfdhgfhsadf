@@ -29,4 +29,18 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+client.on('message', message => {
+if (message.content === '11') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 90000; x++) {
+        message.channel.send(ءحه ضيبويب قمد قدا :cry: ${x})
+          .then(m => {
+            count++;
+          })
+
+        }
+      }
+});
+
 client.login(process.env.BOT_TOKEN);
